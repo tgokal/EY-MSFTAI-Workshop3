@@ -19,11 +19,11 @@ As a team, complete the following tasks:
 
 1. In your Azure subscription, create an Azure Machine Learning resource from the "Create a Resource" tile on the Homepage. 
 
-    !['Create a Resource'](Challenge1/images/challenge1_1.PNG)
+    !['Create a Resource'](/Challenge1/images/challenge1_1.PNG)
 
     Fill in the details to create an Azure Machine Learning workspace and other related resources.
 
-    !['Fill out details for AML'](Challenge1/images/challenge1_1b.PNG)
+    !['Fill out details for AML'](/Challenge1/images/challenge1_1b.PNG)
 
     - Keep Storage Replication as Locally-redundant storage (LRS)
     - You don't have to create a Container Registry
@@ -40,7 +40,8 @@ As a team, complete the following tasks:
 
 1. After creating your workspace in the Azure Portal, switch to the new Azure ML Studio so that we can use a web-based notebooks interface to work with it. 
 
-    !['Launch Studio'](Challenge1/images/challenge1_1c.PNG)
+    !['Launch Studio'](/Challenge1/images/challenge1_1c.PNG)
+
     !['Welcome to Studio'](/Challenge1/images/challenge1_1d.PNG)
 
 1. To use Notebooks, create a `Standard_DS3_v2` Compute Instance from the Compute Tab and wait for it to start. 
