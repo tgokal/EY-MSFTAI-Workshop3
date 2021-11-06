@@ -40,7 +40,12 @@ As a team, complete the following tasks:
 
 1. Upload the Challenge files from this repo. This can be done manually or by using GitHub. 
 
-    If you're using GitHub, start up a new Terminal in your Jupyter Lab environment. Change directory into our Users folder. Here, you'll need to clone your forked repo using the command `git clone <forked repo URL>`. You should see your files uploaded to your Jupyter environment.
+    - If you're using GitHub, fork this repository. This will create a a clean template of all the necessary files for Challenges 1, 2 and 3 which you can change. Doing so leaves this original repository unchanged so that other Teams will see the same blank files.
+        - Start a new Terminal in your Jupyter Lab environment. 
+        - Change directory into our Users folder using `cd` and `ls` from the Terminal. 
+        - Clone your foked repo by typing the command `git clone <forked repo URL>` into the Terminal. 
+        - You should see your files uploaded to your Jupyter environment within your Users folder.
+        - Click into the cloned files and navigate to Challenge 1.
 
 1. Once your folders have been uploaded, navigate into the **Challenge 1** folder and upload the training data. You will find this CSV file in the Files tab within the Microsoft Teams site, called **porto_seguro_safe_driver_prediction_input.csv**
 
