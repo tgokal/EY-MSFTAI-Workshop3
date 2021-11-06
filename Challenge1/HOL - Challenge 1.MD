@@ -12,6 +12,8 @@ In this Challenge, we will:
 
 - Verify that the model training process has been completed with the creation of a pkl file
 
+!['Challenge 1 Architecture'](/Challenge1/images/challenge1architecture.PNG)
+
 ## <u> Steps </u>
 
 As a team, complete the following tasks:
