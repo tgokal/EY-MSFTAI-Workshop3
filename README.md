@@ -6,4 +6,4 @@ For Challenge 4 - Training from a DevOps pipeline, you will need to use this MLO
 
 This workshop is based on a retired OpenHack repo from Microsoft.
 
-Navigate to Challenge 1 to begin the workshop.
+Navigate to **Challenge 1** to begin the workshop.
