@@ -19,11 +19,11 @@ As a team, complete the following tasks:
 
 1. In your Azure subscription, create an Azure Machine Learning resource from the "Create a Resource" tile on the Homepage. 
 
-    !['Create a Resource'](/images/challenge1_1.PNG)
+    !['Create a Resource'](images/challenge1_1.PNG)
 
     Fill in the details to create an Azure Machine Learning workspace and other related resources.
 
-    !['Fill out details for AML'](/images/challenge1_1b.PNG)
+    !['Fill out details for AML'](images/challenge1_1b.PNG)
 
     - Keep Storage Replication as Locally-redundant storage (LRS)
     - You don't have to create a Container Registry
@@ -40,43 +40,43 @@ As a team, complete the following tasks:
 
 1. After creating your workspace in the Azure Portal, switch to the new Azure ML Studio so that we can use a web-based notebooks interface to work with it. 
 
-    !['Launch Studio'](/images/challenge1_1c.PNG)
-    !['Welcome to Studio'](/images/challenge1_1d.PNG)
+    !['Launch Studio'](images/challenge1_1c.PNG)
+    !['Welcome to Studio'](images/challenge1_1d.PNG)
 
 1. To use Notebooks, create a `Standard_DS3_v2` Compute Instance from the Compute Tab and wait for it to start. 
 
-    !['Create a Compute Instance'](/images/challenge1_1e.PNG)
+    !['Create a Compute Instance'](images/challenge1_1e.PNG)
 
 1. Once the Compute Instance has been provisioned, open the Jupyter Lab environment link. 
 
-    !['Open JupyterLab'](/images/challenge1_1f.PNG)
+    !['Open JupyterLab'](images/challenge1_1f.PNG)
 
 1. Upload the Challenge files from this repo. This can be done manually or by using GitHub. 
 
     - If you're using GitHub, fork this repository. This will create a a clean template of all the necessary files for Challenges 1, 2 and 3 which you can change. Doing so leaves this original repository unchanged so that other Teams will see the same blank files.
 
-    !['Fork this GitHub repo'](/images/challenge1_1h.PNG)
+    !['Fork this GitHub repo'](images/challenge1_1h.PNG)
 
     - Start a new Terminal in your Jupyter Lab environment. 
 
-    !['Create a new Terminal'](/images/challenge1_1g.PNG)
+    !['Create a new Terminal'](images/challenge1_1g.PNG)
 
 
     - Change directory into our Users folder using `cd` and `ls` from the Terminal. 
     - Clone your foked repo by typing the command `git clone <forked repo URL>` into the Terminal. 
     - You should see your files uploaded to your Jupyter environment within your Users folder.
 
-    !['Loaded Files'](/images/challenge1_1i.PNG)
+    !['Loaded Files'](images/challenge1_1i.PNG)
 
     - Click into the cloned files and navigate to Challenge 1.
 
 1. Once your folders have been uploaded, navigate into the **Challenge 1** folder and upload the training data. You will find this CSV file in the Files tab within the Microsoft Teams site, called **porto_seguro_safe_driver_prediction_input.csv**
 
-    !['Loaded Files'](/images/challenge1_1k.PNG)
+    !['Loaded Files'](images/challenge1_1k.PNG)
 
 1. In your Challenge 1 folder, open the **porto-seguro-safe-driver-prediction-LGBM.ipynb** notebook 
 
-    !['Loaded Notebook'](/images/challenge1_1j.PNG)
+    !['Loaded Notebook'](images/challenge1_1j.PNG)
 
 1. Navigate to the **Kernel** in the top right hand corner of your Notebook and ensure that the kernel selected is **Python 3.6 - AzureML**
 
@@ -86,7 +86,7 @@ As a team, complete the following tasks:
 
     - Verify that the model has been trained by viewing the model artefact, the trained model file - **.pkl**.
 
-    !['Verify pkl file'](/images/challenge1_1l.PNG)
+    !['Verify pkl file'](images/challenge1_1l.PNG)
 
 
 ## <u> Success Criteria </u>  
