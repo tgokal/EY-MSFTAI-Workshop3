@@ -53,6 +53,7 @@ As a team, complete the following tasks:
 1. Once the Compute Instance has been provisioned, open the Jupyter Lab environment link. 
 
     !['Open JupyterLab'](/Challenge1/images/challenge1_1f.PNG)
+    !['Open JupyterLab'](/Challenge1/images/challenge1_1g.PNG)
 
 1. Upload the Challenge files from this repo. This can be done manually or by using GitHub. 
 
@@ -62,7 +63,7 @@ As a team, complete the following tasks:
 
     - Start a new Terminal in your Jupyter Lab environment. 
 
-    !['Create a new Terminal'](/Challenge1/images/challenge1_1g.PNG)
+    !['Create a new Terminal'](/Challenge1/images/challenge1_1ga.PNG)
 
 
     - Change directory into our Users folder using `cd` and `ls` from the Terminal. 
