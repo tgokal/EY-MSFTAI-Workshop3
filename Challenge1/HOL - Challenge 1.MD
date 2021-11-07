@@ -93,6 +93,15 @@ As a team, complete the following tasks:
     !['Verify pkl file'](/Challenge1/images/challenge1_1l.PNG)
 
 
+## <u> Coaching Questions </u>
+
+Once you've completed the Challenge, tag your Coach in your Team Channel and discuss the following questions with them:
+
+1. What benefits and challenges can you see in using an Azure Machine Learning workspace as a central place for data scientisits and developers to collaborate on machine learning code?
+
+2. What benefits and challenges can you see in using notebooks as a development interface for model training code - particularly in respect to automating training processes?
+
+
 ## <u> Success Criteria </u>  
 
 To have completed this Challenge, you should have:  
@@ -101,11 +110,4 @@ To have completed this Challenge, you should have:
 
 - Run the Challenge 1 notebook in your Azure Machine Learning compute instance and show your coach the training model *.pkl file
 
-
-## <u> Coaching Questions </u>
-
-Once you've completed the Challenge, tag your Coach in your Team Channel and discuss the following questions with them:
-
-1. What benefits and challenges can you see in using an Azure Machine Learning workspace as a central place for data scientisits and developers to collaborate on machine learning code?
-
-2. What benefits and challenges can you see in using notebooks as a development interface for model training code - particularly in respect to automating training processes?
+- Discuss Coaching Questions with your Coach and Team.
