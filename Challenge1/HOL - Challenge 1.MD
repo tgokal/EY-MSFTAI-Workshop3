@@ -51,7 +51,7 @@ As a team, complete the following tasks:
 1. To use Notebooks, create a `Standard_DS3_v2` Compute Instance from the Compute Tab. Click on the Next: Advanced Settings button to explore how you'd set up a virtual network in a prod environment, assign a compute to another user, etc. Don't change any of these settings - this is just for you to learn and expose yourself to the Advanced Settings. Created your `Standard_DS3_v2` Compute Instance and wait for it to start. 
 
     !['Create a Compute Instance'](/Challenge1/images/challenge1_1e.PNG)
-    !['Create a Compute Instance'](/Challenge1/images/challenge1_1e2.PNG)
+    !['Create a Compute Instance'](/Challenge1/images/challenge1_1e2.png)
 
 1. Once the Compute Instance has been provisioned, open the Jupyter Lab environment link. 
 
@@ -78,7 +78,7 @@ As a team, complete the following tasks:
 
     - Clone your foked repo here by typing the command `git clone <forked repo URL>` into the Terminal. 
 
-    !['Create a new Terminal'](/Challenge1/images/challenge1_1gb.PNG)
+    !['Create a new Terminal'](/Challenge1/images/challenge1_1gb.png)
 
 
     - You should see your files uploaded to your Jupyter environment within your Users folder.
@@ -89,7 +89,7 @@ As a team, complete the following tasks:
 
 1. Once your folders have been uploaded, navigate into the **Challenge 1** folder. Create a **data** folder. 
 
-    !['Create a new Terminal'](/Challenge1/images/challenge1_1gc.PNG)
+    !['Create a new Terminal'](/Challenge1/images/challenge1_1gc.png)
 
     You will find the training data CSV file in the Files tab within the Microsoft Teams site, called **porto_seguro_safe_driver_prediction_input.csv**
 
@@ -97,9 +97,9 @@ As a team, complete the following tasks:
 
     Download the CSV file locally on your laptop and then upload the file into the **data** folder within Jupyter Lab. Click the **red Upload** button to confirm the upload. This upload will take 10-20 seconds.
 
-    !['Create a new Terminal'](/Challenge1/images/challenge1_1gd.PNG)
+    !['Create a new Terminal'](/Challenge1/images/challenge1_1gd.png)
 
-    !['Create a new Terminal'](/Challenge1/images/challenge1_1ge.PNG)
+    !['Create a new Terminal'](/Challenge1/images/challenge1_1ge.png)
 
 1. In your Challenge 1 folder, open the **porto-seguro-safe-driver-prediction-LGBM.ipynb** notebook 
 
