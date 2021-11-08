@@ -97,7 +97,7 @@ As a team, complete the following tasks:
 
 ## <u> Coaching Questions </u>
 
-Once you've completed the Challenge, tag your Coach in your Team Channel and discuss the following questions with them:
+Once you've completed the above steps, tag your Coach in your Team Channel and discuss the following Coaching questions with them:
 
 1. What benefits and challenges can you see in using an Azure Machine Learning workspace as a central place for data scientisits and developers to collaborate on machine learning code?
 
