@@ -23,6 +23,8 @@ As a team, complete the following tasks:
 
     !['Create a Resource'](/Challenge1/images/challenge1_1.PNG)
 
+    !['Create a Resource'](/Challenge1/images/challenge1_1a.PNG)
+
     Fill in the details to create an Azure Machine Learning workspace and other related resources.
 
     !['Fill out details for AML'](/Challenge1/images/challenge1_1b.PNG)
