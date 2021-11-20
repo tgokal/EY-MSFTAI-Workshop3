@@ -58,7 +58,10 @@ As a team, complete the following tasks:
     - Keep Storage Replication as Locally-redundant storage (LRS).
     - You don't have to create a Container Registry.
     - As you fill out your Azure ML Workspace name, the name for new Storage Account, Key vault and Application insight resources are created.
-    - Click on the **Review + Create** button to create the Azure Machine Learning resource and complementary resources.
+    - Click on the **Review + Create** and **Create** buttons to create the Azure Machine Learning resource and complementary resources.
+    - Your deployment should be in progress.
+
+    !['Deployment in progress'](/Challenge1/images/challenge1_1b1.PNG)
 
 1. After creating your workspace in the Azure Portal, switch to the new Azure ML Studio so that we can use a web-based notebooks interface to work with it. 
 
