@@ -86,7 +86,7 @@ As a team, complete the following tasks:
     
     Don't change any of these settings - this is just for you to learn and expose yourself to the Advanced Settings. 
 
-    !['Create a Compute Instance'](/Challenge1/images/challenge1_1e2.PNG)
+    !['Create a Compute Instance'](/Challenge1/images/challenge1_1e2.png)
     
     Click on the **Create** button to spin up your `Standard_DS3_v2` Compute Instance and wait for it to start. This should take 5-10 minutes.
 
@@ -147,9 +147,9 @@ As a team, complete the following tasks:
 
     !['Create a new Terminal'](/Challenge1/images/challenge1_1gd.png)
 
-    !['Loaded Files'](/Challenge1/images/challenge1_1gd1.PNG)
+    !['Loaded Files'](/Challenge1/images/challenge1_1gd1.png)
 
-    !['Create a new Terminal'](/Challenge1/images/challenge1_1ge.PNG)
+    !['Create a new Terminal'](/Challenge1/images/challenge1_1ge.png)
 
 1. In your Challenge 1 folder, open the **porto-seguro-safe-driver-prediction-LGBM.ipynb** notebook 
 
