@@ -184,3 +184,6 @@ To have completed this Challenge, you should have:
 - Run the Challenge 1 notebook in your Azure Machine Learning compute instance and show your coach the training model *.pkl file
 
 - Discuss Coaching Questions with your Coach and Team.
+
+
+Navigate to [Challenge 2](Challenge23\HOL_Challenge_2.MD) to continue.
