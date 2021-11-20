@@ -44,21 +44,21 @@ As a team, complete the following tasks:
 
     !['Create a Resource'](/Challenge1/images/challenge1_1a.PNG)
 
-    Fill in the details to create an Azure Machine Learning workspace and other related resources.
+    Fill in the details to create an Azure Machine Learning workspace and other related resources. You will need to create a new Resource Group.
 
     !['Fill out details for AML'](/Challenge1/images/challenge1_1b.PNG)
+
+    | Field         | Value    |
+    |--------------|-----------|
+    | `Subscription` | `<your subscription name>`      |
+    | `Resource Group`      | `rg-Team-<your Team number>`  |
+    | `Workspace name`      | `EY-Team-<your Team number>`  |
+    | `Region`      | `australiaeast`  |
 
     - Keep Storage Replication as Locally-redundant storage (LRS)
     - You don't have to create a Container Registry
     - In the below table, see recommended names for resources.
 
-        | Field         | Value    |
-        |--------------|-----------|
-        | `Subscription` | `<your subscription name>`      |
-        | `Resource Group`      | `rg-Team-<your Team number>`  |
-        | `Workspace name`      | `EY-Team-<your Team number>`  |
-        | `Region`      | `australiaeast`  |
-    
     - As you fill out your Azure ML Workspace name, the name for new Storage Account, Key vault and Application insight resources are created.
 
 1. After creating your workspace in the Azure Portal, switch to the new Azure ML Studio so that we can use a web-based notebooks interface to work with it. 
