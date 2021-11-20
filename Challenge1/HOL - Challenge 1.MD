@@ -1,10 +1,29 @@
 # Welcome to Challenge 1
 
+## Business Problem and Use Case
+
+Underwriting is an essential part of car insurance through which insurers assess risk and determine premiums to accept it. Evaluating and pricing driver risk requires extensive research on the risk profile of the driver. Manual underwriting is time-consuming, prone to errors, and can lead to inefficient pricing. 
+
+With many factors influencing whether or not a driver will submit a claim (i.e. age, health conditions, type of car, car mileage, previous driver record, etc.), there is a need for insurance companies to ensure that this process is accurate, timely, free of bias and can be automated. Predicting a correct claim amount has a significant impact on the strategy and operations of an insurer. 
+
+Zooming out to an industry perspective:
+
+- 56% of insurance executives believe that AI would improve operational efficiency. 
+- 47% state that their investment in AI would accelerate over the next year.
+- McKinsey estimates that 25% of the insurance industry will be automated in 2025 thanks to AI and machine learning techniques.
+
+## Technology Solutioning
+
+We will be creating a classification model in Azure Machine Learning that predicts whether a driver will submit an insurance claim, given factors about them, their vehicle, etc. 
+
+The specific model that we'll be using is LightGBM - a decision tree based algorithm developed by Microsoft. 
+
+Just like how no man is an island, no model is an isolated system. For this model to provide a ROI and recurring value, it needs to be deployed to a compute resource so that business analysts at insurance firms can underwrite their customers accurately. Therefore, we'll be using Azure DevOps and the MLOps Python repo to create a CICD pipeline and the infrastructure that comes with it to serve as the operating model in the insurance company.
 
 ## <u> Aim </u>
 
 
-In this Challenge, we will:
+In Challenge 1, we will:
 
 - Fork the Workshop GitHub repository and upload our training dataset to an Azure Machine Learning Compute Instance.
 
