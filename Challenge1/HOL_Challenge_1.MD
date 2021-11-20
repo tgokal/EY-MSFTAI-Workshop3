@@ -90,9 +90,11 @@ As a team, complete the following tasks:
     
     Click on the **Create** button to spin up your `Standard_DS3_v2` Compute Instance and wait for it to start. This should take 5-10 minutes.
 
-1. Once the Compute Instance has been provisioned, open the Jupyter Lab environment link. 
-
     !['Open JupyterLab'](/Challenge1/images/challenge1_1f.PNG)
+
+1. Once the Compute Instance has been provisioned, click on the Jupyter Lab environment link to be taken to an interactive Jupyter Lab environment where we can use Notebooks. 
+
+    
 
    This is what you would see once the Jupyter Lab environment has loaded:
 
