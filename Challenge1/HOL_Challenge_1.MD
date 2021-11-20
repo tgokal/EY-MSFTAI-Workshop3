@@ -86,7 +86,7 @@ As a team, complete the following tasks:
     
     Don't change any of these settings - this is just for you to learn and expose yourself to the Advanced Settings. 
 
-    !['Create a Compute Instance'](/Challenge1/images/challenge1_1e2.png)
+    !['Create a Compute Instance'](/Challenge1/images/challenge1_1e2.PNG)
     
     Click on the **Create** button to spin up your `Standard_DS3_v2` Compute Instance and wait for it to start. This should take 5-10 minutes.
 
@@ -94,7 +94,7 @@ As a team, complete the following tasks:
 
 1. Once the Compute Instance has been provisioned, you should see this:
 
-    !['Open JupyterLab'](/Challenge1/images/challenge1_1f1.PNG)
+    !['Open JupyterLab'](/Challenge1/images/challenge1_1f1.png)
 
 
     Click on the Jupyter Lab environment link to be taken to an interactive Jupyter Lab environment where we can use Notebooks. 
@@ -105,7 +105,7 @@ As a team, complete the following tasks:
 
     Navigate into the Users folder and into your subscription name folder, like so:
 
-    !['Open JupyterLab'](/Challenge1/images/challenge1_1g1.PNG)
+    !['Open JupyterLab'](/Challenge1/images/challenge1_1g1.png)
 
 1. Upload the Challenge files from this repo. This can be done manually or by using GitHub. 
 
@@ -120,11 +120,11 @@ As a team, complete the following tasks:
 
     - Change directory into the Users folder using `cd` and `ls` from the Terminal. 
 
-    !['Create a new Terminal'](/Challenge1/images/challenge1_1ga1.PNG)
+    !['Create a new Terminal'](/Challenge1/images/challenge1_1ga1.png)
 
     - Clone your foked repo here by typing the command `git clone <forked repo URL>` into the Terminal. 
 
-    !['Create a new Terminal'](/Challenge1/images/challenge1_1gb.png)
+    !['Create a new Terminal'](/Challenge1/images/challenge1_1gb.PNG)
 
 
     - You should see your files uploaded to your Jupyter environment within your Users/{subscription name} folder.
@@ -135,7 +135,7 @@ As a team, complete the following tasks:
 
 1. Once your folders have been uploaded, navigate into the **Challenge 1** folder. Create a **data** folder. 
 
-    !['Create a new Terminal'](/Challenge1/images/challenge1_1gc.png)
+    !['Create a new Terminal'](/Challenge1/images/challenge1_1gc.PNG)
 
     You will find the training data CSV file in the Files tab within the Microsoft Teams site, called **porto_seguro_safe_driver_prediction_input.csv**
 
@@ -149,7 +149,7 @@ As a team, complete the following tasks:
 
     !['Loaded Files'](/Challenge1/images/challenge1_1gd1.PNG)
 
-    !['Create a new Terminal'](/Challenge1/images/challenge1_1ge.png)
+    !['Create a new Terminal'](/Challenge1/images/challenge1_1ge.PNG)
 
 1. In your Challenge 1 folder, open the **porto-seguro-safe-driver-prediction-LGBM.ipynb** notebook 
 
