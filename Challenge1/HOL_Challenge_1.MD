@@ -124,7 +124,7 @@ As a team, complete the following tasks:
 
     - Clone your foked repo here by typing the command `git clone <forked repo URL>` into the Terminal. 
 
-    !['Create a new Terminal'](/Challenge1/images/challenge1_1gb.PNG)
+    !['Create a new Terminal'](/Challenge1/images/challenge1_1gb.png)
 
 
     - You should see your files uploaded to your Jupyter environment within your Users/{subscription name} folder.
@@ -135,7 +135,7 @@ As a team, complete the following tasks:
 
 1. Once your folders have been uploaded, navigate into the **Challenge 1** folder. Create a **data** folder. 
 
-    !['Create a new Terminal'](/Challenge1/images/challenge1_1gc.PNG)
+    !['Create a new Terminal'](/Challenge1/images/challenge1_1gc.png)
 
     You will find the training data CSV file in the Files tab within the Microsoft Teams site, called **porto_seguro_safe_driver_prediction_input.csv**
 
