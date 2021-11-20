@@ -73,10 +73,22 @@ As a team, complete the following tasks:
 
     !['Welcome to Studio'](/Challenge1/images/challenge1_1d.PNG)
 
-1. To use Notebooks, create a `Standard_DS3_v2` Compute Instance from the Compute Tab. Click on the Next: Advanced Settings button to explore how you'd set up a virtual network in a prod environment, assign a compute to another user, etc. Don't change any of these settings - this is just for you to learn and expose yourself to the Advanced Settings. Created your `Standard_DS3_v2` Compute Instance and wait for it to start. 
+1. To use Notebooks, navigate to the Compute Tab and click on the **New** button.
+
+
+    !['Welcome to Studio'](/Challenge1/images/challenge1_1d1.PNG)    
+
+    Create a `Standard_DS3_v2` Compute Instance and name the instance `EYTeam{insert team number here}devbox`. The virtual machine type should be `CPU` and based in the location `australiaeast`.
 
     !['Create a Compute Instance'](/Challenge1/images/challenge1_1e.PNG)
+    
+    Click on the Next: Advanced Settings button to explore how you'd set up a virtual network in a prod environment, assign a compute to another user, etc. 
+    
+    Don't change any of these settings - this is just for you to learn and expose yourself to the Advanced Settings. 
+
     !['Create a Compute Instance'](/Challenge1/images/challenge1_1e2.png)
+    
+    Click on the **Create** button to spin up your `Standard_DS3_v2` Compute Instance and wait for it to start. This should take 5-10 minutes.
 
 1. Once the Compute Instance has been provisioned, open the Jupyter Lab environment link. 
 
