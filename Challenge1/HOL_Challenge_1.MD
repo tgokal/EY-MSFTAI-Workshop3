@@ -63,6 +63,10 @@ As a team, complete the following tasks:
 
     !['Deployment in progress'](/Challenge1/images/challenge1_1b1.png)
 
+    - Once completed, click on the **Go to Resource** button.
+
+    !['Deployment in progress'](/Challenge1/images/challenge1_1b2.png)
+
 1. After creating your workspace in the Azure Portal, switch to the new Azure ML Studio so that we can use a web-based notebooks interface to work with it. 
 
     !['Launch Studio'](/Challenge1/images/challenge1_1c.PNG)
