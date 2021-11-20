@@ -16,9 +16,9 @@ Zooming out to an industry perspective:
 
 We will be creating a classification model in Azure Machine Learning that predicts whether a driver will submit an insurance claim, given factors about them, their vehicle, etc. 
 
-The specific model that we'll be using is LightGBM - a decision tree based algorithm developed by Microsoft. 
+The specific model that we'll be using is [LightGBM - a decision tree based algorithm developed by Microsoft](https://www.microsoft.com/en-us/research/project/lightgbm/). 
 
-Just like how no man is an island, no model is an isolated system. For this model to provide a ROI and recurring value, it needs to be deployed to a compute resource so that business analysts at insurance firms can underwrite their customers accurately. Therefore, we'll be using Azure DevOps and the MLOps Python repo to create a CICD pipeline and the infrastructure that comes with it to serve as the operating model in the insurance company.
+Just like how no man is an island, no model is an isolated system. For this model to provide a ROI and recurring value, it needs to be deployed to a compute resource so that business analysts at insurance firms can underwrite their customers accurately. Therefore, we'll be using [Azure DevOps](https://azure.microsoft.com/en-us/services/devops/?nav=min) and the [MLOps Python repo](https://github.com/microsoft/MLOpsPython) to create a CICD pipeline and the infrastructure that comes with it to serve as the operating model in the insurance company.
 
 ## <u> Aim </u>
 
