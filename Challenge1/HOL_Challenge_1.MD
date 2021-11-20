@@ -76,7 +76,7 @@ As a team, complete the following tasks:
 1. To use Notebooks, navigate to the Compute Tab and click on the **New** button.
 
 
-    !['Welcome to Studio'](/Challenge1/images/challenge1_1d1.PNG)    
+    !['Welcome to Studio'](/Challenge1/images/challenge1_1d1.png)    
 
     Create a `Standard_DS3_v2` Compute Instance and name the instance `EYTeam{insert team number here}devbox`. The virtual machine type should be `CPU` and based in the location `australiaeast`.
 
@@ -92,13 +92,20 @@ As a team, complete the following tasks:
 
     !['Open JupyterLab'](/Challenge1/images/challenge1_1f.PNG)
 
-1. Once the Compute Instance has been provisioned, click on the Jupyter Lab environment link to be taken to an interactive Jupyter Lab environment where we can use Notebooks. 
+1. Once the Compute Instance has been provisioned, you should see this:
 
-    
+    !['Open JupyterLab'](/Challenge1/images/challenge1_1f1.PNG)
 
-   This is what you would see once the Jupyter Lab environment has loaded:
+
+    Click on the Jupyter Lab environment link to be taken to an interactive Jupyter Lab environment where we can use Notebooks. 
+
+    This is what you would see once the Jupyter Lab environment has loaded:
 
     !['Open JupyterLab'](/Challenge1/images/challenge1_1g.PNG)
+
+    Navigate into the Users folder and into your subscription name folder, like so:
+
+    !['Open JupyterLab'](/Challenge1/images/challenge1_1g1.PNG)
 
 1. Upload the Challenge files from this repo. This can be done manually or by using GitHub. 
 
@@ -113,16 +120,18 @@ As a team, complete the following tasks:
 
     - Change directory into the Users folder using `cd` and `ls` from the Terminal. 
 
-    !['Create a new Terminal'](/Challenge1/images/challenge1_1ga.PNG)
+    !['Create a new Terminal'](/Challenge1/images/challenge1_1ga1.PNG)
 
     - Clone your foked repo here by typing the command `git clone <forked repo URL>` into the Terminal. 
 
     !['Create a new Terminal'](/Challenge1/images/challenge1_1gb.png)
 
 
-    - You should see your files uploaded to your Jupyter environment within your Users folder.
+    - You should see your files uploaded to your Jupyter environment within your Users/{subscription name} folder.
 
     - Click into the cloned files and navigate to Challenge 1.
+
+    !['Create a new Terminal'](/Challenge1/images/challenge1_1gc1.png)
 
 1. Once your folders have been uploaded, navigate into the **Challenge 1** folder. Create a **data** folder. 
 
@@ -132,9 +141,13 @@ As a team, complete the following tasks:
 
     !['Loaded Files'](/Challenge1/images/challenge1_1k.PNG)
 
+    
+
     Download the CSV file locally on your laptop and then upload the file into the **data** folder within Jupyter Lab. Click the **red Upload** button to confirm the upload. This upload will take 10-20 seconds.
 
     !['Create a new Terminal'](/Challenge1/images/challenge1_1gd.png)
+
+    !['Loaded Files'](/Challenge1/images/challenge1_1gd1.PNG)
 
     !['Create a new Terminal'](/Challenge1/images/challenge1_1ge.png)
 
