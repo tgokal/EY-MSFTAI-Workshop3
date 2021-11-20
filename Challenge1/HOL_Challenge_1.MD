@@ -1,6 +1,6 @@
 # Welcome to Challenge 1
 
-## Business Problem and Use Case
+## <u> Business Problem and Use Case </u>
 
 Underwriting is an essential part of car insurance through which insurers assess risk and determine premiums to accept it. Evaluating and pricing driver risk requires extensive research on the risk profile of the driver. Manual underwriting is time-consuming, prone to errors, and can lead to inefficient pricing. 
 
@@ -12,7 +12,7 @@ Zooming out to an industry perspective:
 - 47% state that their investment in AI would accelerate over the next year.
 - McKinsey estimates that 25% of the insurance industry will be automated in 2025 thanks to AI and machine learning techniques.
 
-## Technology Solutioning
+## <u> Technology Solutioning </u>
 
 We will be creating a classification model in Azure Machine Learning that predicts whether a driver will submit an insurance claim, given factors about them, their vehicle, etc. 
 
