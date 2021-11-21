@@ -73,6 +73,6 @@ Follow along in the Challenge 2 and 3 Jupyter Notebook which contains the instru
 
 - Discussed the Coaching Questions with your Coach and Team.
 
-
+Navigate to the [Challenge 4](https://github.com/tgokal/EY-MSFTAI-Workshop3/blob/master/Challenge4/HOL_Challenge_4.MD) guide to create your CICD pipeline in Azure DevOps.
 
 
