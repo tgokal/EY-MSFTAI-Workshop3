@@ -92,23 +92,28 @@ You do not need to fix every single linting error here. This is for your underst
 
     You will see a `parameters.json` file be created in your **Challenge23/driver-training** directory:
 
-    !['Challenge 2 Notebook'](/Challenge23/images/challenge2_k.png)
+      !['Challenge 2 Notebook'](/Challenge23/images/challenge2_k.png)
     
     - At **Checkpoint 6** In `driver_training.py`, complete the `##TODO` for using the functions imported from `train.py`. Once completed, you will see a `driver_training.py` file in your folder. Open it to review the code that you've written.
 
-    !['Challenge 2 Notebook'](/Challenge23/images/challenge2_l.png)
+      !['Challenge 2 Notebook'](/Challenge23/images/challenge2_l.png)
 
     After you run the next cell, you'll see an outputs folder be created. This will store your model artefact once trained and submitted as an Experiment.
 
-    !['Challenge 2 Notebook'](/Challenge23/images/challenge2_m.png)
+      !['Challenge 2 Notebook'](/Challenge23/images/challenge2_m.png)
     
     - At **Checkpoint 7** In the `ScriptRunConfig()` object, create a compute cluster, environment and experiment using the links provided.
 
     - Once you submit the Experiment run, navigate to the Azure ML workspace UI and you'll see your training run prepare:
 
-    !['Challenge 2 Notebook'](/Challenge23/images/challenge2_n.png)
+     !['Challenge 2 Notebook'](/Challenge23/images/challenge2_n.png)
 
     - Training should take 10-15 minutes to complete.
+
+    - If anything fails, you will be able to find out more information from the **Outputs + logs** section.
+
+      !['Challenge 2 Notebook'](/Challenge23/images/challenge2_o.png)
+
 
 1. View the `learning_rate` parameter in the configuration file, execute a run against Azure ML compute to train the model and verify that the metrics are logged. Change the `learning_rate` value and then execute another run and see the values changed in the Azure ML service.
 
