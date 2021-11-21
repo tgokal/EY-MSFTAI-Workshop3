@@ -22,5 +22,8 @@ This workshop is based on a retired OpenHack repo from Microsoft.
 
 Navigate to [Challenge 1](Challenge1/HOL_Challenge_1.MD) to begin the workshop.
 
-## TODO
-Insert Pre-Lab on environment set up - Visual Studio Code, GitHub, Azure DevOps
+# Before you get started...
+
+- [Create a GitHub account](https://github.com/)
+- [Create an Azure Subscription](https://azure.microsoft.com/en-au/free)
+- [Create an Azure DevOps account](https://azure.microsoft.com/en-in/services/devops/)
