@@ -27,11 +27,11 @@ Therefore, we'll be using [Azure DevOps](https://azure.microsoft.com/en-us/servi
 
 In Challenge 1, we will:
 
-- Fork the Workshop GitHub repository and upload our training dataset to an Azure Machine Learning Compute Instance.
+- Fork the Workshop GitHub repository and upload our training dataset *.csv file to the Jupyter Notebook environment running off a Compute Instance (VM)
 
-- Train and validate an insurance claim classification model.
+- Train and validate an insurance claim classification model from a Jupyter Notebook *.ipynb.
 
-- Verify that the model training process has been completed with the creation of a pkl file
+- Verify that the model training process has been completed with the creation of a *.pkl file.
 
 !['Challenge 1 Architecture'](/Challenge1/images/challenge1architecture.PNG)
 
@@ -119,7 +119,6 @@ As a team, complete the following tasks:
 
     !['Create a new Terminal'](/Challenge1/images/challenge1_1g.PNG)
 
-
     - Change directory into the Users folder using `cd` and `ls` from the Terminal. 
 
     !['Create a new Terminal'](/Challenge1/images/challenge1_1ga1.png)
@@ -128,8 +127,9 @@ As a team, complete the following tasks:
 
     !['Create a new Terminal'](/Challenge1/images/challenge1_1gb.png)
 
-
     - You should see your files uploaded to your Jupyter environment within your Users/{subscription name} folder.
+
+    !['Create a Resource'](/Challenge1/images/challenge1_1gd2.png)
 
     - Click into the cloned files and navigate to Challenge 1.
 
