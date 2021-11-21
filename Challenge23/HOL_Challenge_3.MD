@@ -15,7 +15,7 @@ In this Challenge, we will:
 
 - Retrieve the most recent version of the registered insurance claim prediction model.
 
-- Create a socring script which includes an `init` function that loads the registered model and a `run` function that uses it to predict claim classifications for new driver data.
+- Create a scoring script which includes an `init` function that loads the registered model and a `run` function that uses it to predict claim classifications for new driver data.
 
 - Define the container environment that includes the Python packages required by your scoring script.
 
@@ -27,6 +27,12 @@ In this Challenge, we will:
 
 Follow along in the Challenge 2 and 3 Jupyter Notebook which contains the instructions for creating and testing the REST API endpoint.
 
+## Coaching Questions
+
+- What are the benefits of splitting the ML process into steps?
+
+- What are the benefits of using the InferenceConfig object for deployment?
+
 ## Success Criteria
 
 - Define the `run` function for the scoring script which will call the model predictions and returns the probabilities and predicted classes.
@@ -37,10 +43,8 @@ Follow along in the Challenge 2 and 3 Jupyter Notebook which contains the instru
 
 - Successfully deploy the trained model as a REST service in Azure Container Instance and test its endpoint.
 
-## Coaching Questions
+- Discussed the Coaching Questions with your Coach and Team.
 
-- What are the benefits of splitting the ML process into steps?
 
-- What are the benefits of using the InferenceConfig object for deployment?
 
 
