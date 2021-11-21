@@ -121,6 +121,10 @@ You do not need to fix every single linting error here. This is for your underst
 
 1. Register the model in the Azure ML model repository at **Checkpoint 9** using the provided notebook code in your Azure ML workspace - using tags to record the AUC metric in the registration so that the quality of the model is registered and not just the run.
 
+  - If you switch over to the Azure ML workspace, you'll see your registered model.
+
+  !['Challenge 2 Notebook'](/Challenge23/images/challenge3_d.png)
+
 ## <u> Coaching Questions </u>
 
 Once you've completed the Challenge, tag your Coach in your Team Channel and discuss the following questions with them:
