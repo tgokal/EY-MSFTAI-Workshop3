@@ -129,6 +129,8 @@ As a team, complete the following tasks:
 
     - You should see your files uploaded to your Jupyter environment within your Users/{subscription name} folder.
 
+    !['Create a Resource'](/Challenge1/images/challenge1_1gd3.png)
+    
     !['Create a Resource'](/Challenge1/images/challenge1_1gd2.png)
 
     - Click into the cloned files and navigate to Challenge 1.
