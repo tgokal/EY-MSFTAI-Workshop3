@@ -128,8 +128,6 @@ Once you've completed the Challenge, tag your Coach in your Team Channel and dis
 
 1. What is your experience in your organization/customers regarding doing things like model registration and tracking training metrics?
 
-Navigate to the [Challenge 3](https://github.com/tgokal/EY-MSFTAI-Workshop3/blob/master/Challenge23/HOL_Challenge_3.MD) guide to deploy the trained model to an Azure Container Instance. Keep your Notebook open as you'll see the Challenge 3 exercises below.
-
 ## <u> Success Criteria </u>  
 
 To have completed this Challenge, you should have:  
@@ -147,3 +145,5 @@ To have completed this Challenge, you should have:
 - Do a local run of the notebook and show the metrics associated both with the run and the registered model in Azure ML.
 
 - Discussed Coaching Questions with your Coach and Team.
+
+Navigate to the [Challenge 3](https://github.com/tgokal/EY-MSFTAI-Workshop3/blob/master/Challenge23/HOL_Challenge_3.MD) guide to deploy the trained model to an Azure Container Instance. Keep your Notebook open as you'll see the Challenge 3 exercises below.
