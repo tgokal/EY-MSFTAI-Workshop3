@@ -16,14 +16,12 @@ Continuing from Workshop 2, we will be extending our MLOps skills by creating, r
 
 This repo contains the initial set up files for the workshop, DevOps for Data Science and contains all the resources your team will need in order to complete the challenges during the OpenHack.
 
-For Challenge 4 - Training from a DevOps pipeline, you will need to use this MLOps Template repo: https://github.com/microsoft/MLOpsPython 
-
 This workshop is based on a retired OpenHack repo from Microsoft.
-
-Navigate to [Challenge 1](Challenge1/HOL_Challenge_1.MD) to begin the workshop.
 
 # Before you get started...
 
 - [Create a GitHub account](https://github.com/)
 - [Create an Azure Subscription](https://azure.microsoft.com/en-au/free)
 - [Create an Azure DevOps account](https://azure.microsoft.com/en-in/services/devops/)
+
+Navigate to [Challenge 1](Challenge1/HOL_Challenge_1.MD) to begin the workshop.
