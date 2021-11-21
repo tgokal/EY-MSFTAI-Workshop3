@@ -116,6 +116,19 @@ You do not need to fix every single linting error here. This is for your underst
 
 1. Register the model in the Azure ML model repository at **Checkpoint 9** using the provided notebook code in your Azure ML workspace - using tags to record the AUC metric in the registration so that the quality of the model is registered and not just the run.
 
+## <u> Coaching Questions </u>
+
+Once you've completed the Challenge, tag your Coach in your Team Channel and discuss the following questions with them:
+
+1. What is the benefit of separating the training code out of the notebook?
+
+1. What is the benefit of running your experiments using Azure Machine Learning?
+
+1. What are the benefits of using a model repository and tracking the metrics and other parameters?
+
+1. What is your experience in your organization/customers regarding doing things like model registration and tracking training metrics?
+
+Navigate to the [Challenge 3](https://github.com/tgokal/EY-MSFTAI-Workshop3/blob/master/Challenge23/HOL_Challenge_3.MD) guide to deploy the trained model to an Azure Container Instance. Keep your Notebook open as you'll see the Challenge 3 exercises below.
 
 ## <u> Success Criteria </u>  
 
@@ -133,17 +146,4 @@ To have completed this Challenge, you should have:
 
 - Do a local run of the notebook and show the metrics associated both with the run and the registered model in Azure ML.
 
-
-## <u> Coaching Questions </u>
-
-Once you've completed the Challenge, tag your Coach in your Team Channel and discuss the following questions with them:
-
-1. What is the benefit of separating the training code out of the notebook?
-
-1. What is the benefit of running your experiments using Azure Machine Learning?
-
-1. What are the benefits of using a model repository and tracking the metrics and other parameters?
-
-1. What is your experience in your organization/customers regarding doing things like model registration and tracking training metrics?
-
-Navigate to the [Challenge 3](https://github.com/tgokal/EY-MSFTAI-Workshop3/blob/master/Challenge23/HOL_Challenge_3.MD) guide to deploy the trained model to an Azure Container Instance. Keep your Notebook open as you'll see the Challenge 3 exercises below.
+- Discussed Coaching Questions with your Coach and Team.
