@@ -13,7 +13,7 @@ Your team will take the learnings and relevant Python scripts from the previous 
 
 ## Steps
 
-- As a team carefully follow the [Getting Started guide](https://github.com/microsoft/MLOpsPython/blob/master/docs/getting_started.md), where you will:
+- As a team carefully follow the [Getting Started guide](https://github.com/microsoft/MLOpsPython/blob/master/docs/getting_started.md):
 
     - [Set up Azure DevOps](https://github.com/microsoft/MLOpsPython/blob/master/docs/getting_started.md#setting-up-azure-devops) to create an Azure DevOps organization and install the Azure Machine Learning extension. 
 
