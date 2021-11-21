@@ -63,8 +63,11 @@ Your team will take the learnings and relevant Python scripts from the previous 
         !['Challenge 2 Notebook'](/Challenge4/images/challenge4_d.png)
      
     - Once it's been cloned, your directory will look like:
+        
         !['Challenge 2 Notebook'](/Challenge4/images/challenge4_n.png)
+
     - Navigate into the template directory and you will see the following:
+
         !['Challenge 2 Notebook'](/Challenge4/images/challenge4_e.png)
 
 - Coming back to Azure DevOps, we now need to [create a variable group for the Pipeline](https://github.com/microsoft/MLOpsPython/blob/master/docs/getting_started.md#create-a-variable-group-for-your-pipeline). 
@@ -91,6 +94,7 @@ Your team will take the learnings and relevant Python scripts from the previous 
         !['Challenge 2 Notebook'](/Challenge4/images/challenge4_za.png)
 
         Once completed, you should see: 
+
         !['Challenge 2 Notebook'](/Challenge4/images/challenge4_zb.png)
 
         Switching over to Azure, you'll see fully provisioned resources:
@@ -117,7 +121,7 @@ Your team will take the learnings and relevant Python scripts from the previous 
 
     - Rename this pipeline to `Model-Train-Register-CI`.
 
-- Your first run of the build pipeline should **fail**. You will see many linting errors discovered. Attempted to resolve them in your scripts by looking at X for further details.
+- Your first run of the build pipeline should **fail**. You will see many linting errors discovered. Attempt to resolve them in your scripts by looking at X for further details.
 
     - If you are short on time, comment out the linting test section in the `.pipelines/code-quality-template.yml` file.
 
