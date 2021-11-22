@@ -125,6 +125,8 @@ Your team will take the learnings and relevant Python scripts from the previous 
 
     - If you are short on time, comment out the linting test section in the `.pipelines/code-quality-template.yml` file.
 
+    - You will need to install `lightgbm` as an inline Python script within the `.pipelines/code-quality-template.yml` file.
+
 - Once your build pipeline completes, you'll need to [replace the scoring code](https://github.com/microsoft/MLOpsPython/blob/master/docs/custom_model.md#replace-score-code). 
 
 - Next, [set up the Release Deployment pipeline](https://github.com/microsoft/MLOpsPython/blob/master/docs/getting_started.md#set-up-the-release-deployment-pipeline)
