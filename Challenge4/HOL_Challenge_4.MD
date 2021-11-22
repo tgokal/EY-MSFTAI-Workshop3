@@ -56,27 +56,33 @@ Your team will take the learnings and relevant Python scripts from the previous 
     - This will generate your template in your GitHub Account.
         !['Challenge 2 Notebook'](/Challenge4/images/challenge4_c.png)
     
-- Once you've created the template in your GitHub account, **return back to your Terminal in your Jupyter Lab Environment on your Compute Instance**. 
+- Once you've created the template in your GitHub account, **select the VSCode link to create a VSCode session from your Compute Instance**. 
 
-    - In the Terminal, navigate to folder with your subscription name and clone your template using `git clone <url of your forked template>`. See how this is achieved in the screenshot below:
-    
-        !['Challenge 2 Notebook'](/Challenge4/images/challenge4_d.png)
-     
-    - Once it's been cloned, your directory will look like:
-        
-        !['Challenge 2 Notebook'](/Challenge4/images/challenge4_n.png)
+    !['Challenge 2 Notebook'](/Challenge4/images/challenge4_vscode3.png)
 
-    - Navigate into the template directory and you will see the following:
+    Select **Open**
 
-        !['Challenge 2 Notebook'](/Challenge4/images/challenge4_e.png)
+    !['Challenge 2 Notebook'](/Challenge4/images/challenge4_vscode4.png)
+
+    Select **Open again**, this will open up VSCode, like below:
+
+    !['Challenge 2 Notebook'](/Challenge4/images/challenge4_vscode5.png)
+
+    Select **Select Yes Trust all authors**
+
+    !['Challenge 2 Notebook'](/Challenge4/images/challenge4_vscode6.png)
+
+    In the Terminal, clone your MLOps template using `git clone <url of your forked template>` in a different folder compared to your `EY-MSFTAI-Workshop3` repo.
+
+    !['Challenge 2 Notebook'](/Challenge4/images/challenge4_vscode1.png)
+
+    !['Challenge 2 Notebook'](/Challenge4/images/challenge4_vscode2.png)
 
 - Coming back to Azure DevOps, we now need to [create a variable group for the Pipeline](https://github.com/microsoft/MLOpsPython/blob/master/docs/getting_started.md#create-a-variable-group-for-your-pipeline). 
 
     !['Challenge 2 Notebook'](/Challenge4/images/challenge4_s.png)
+
     !['Challenge 2 Notebook'](/Challenge4/images/challenge4_t.png)
-
-
-    
 
 - Next, we need to provision resources using Azure Pipelines with IaC (infrastructure as code) using this [link](https://github.com/microsoft/MLOpsPython/blob/master/docs/getting_started.md#provisioning-resources-using-azure-pipelines)
 
@@ -115,6 +121,25 @@ Your team will take the learnings and relevant Python scripts from the previous 
 
     - Next, we need to update the scripts listed in the [Replace training code](https://github.com/microsoft/MLOpsPython/blob/master/docs/custom_model.md#replace-training-code) of the guide. Ensure that you're committing the changes to GitHub as you change each file `git status`, `git add <file>`, `git commit -m <message>` and `git push origin master`, or using the Source Control feature in VSCode like:
 
+        !['Challenge 2 Notebook'](/Challenge4/images/challenge4_vscode7.png)
+
+        !['Challenge 2 Notebook'](/Challenge4/images/challenge4_vscode8.png)
+
+        !['Challenge 2 Notebook'](/Challenge4/images/challenge4_vscode9.png)
+
+        !['Challenge 2 Notebook'](/Challenge4/images/challenge4_vscode10.png)
+
+        !['Challenge 2 Notebook'](/Challenge4/images/challenge4_vscode11.png)
+
+        !['Challenge 2 Notebook'](/Challenge4/images/challenge4_vscode12.png)
+
+        !['Challenge 2 Notebook'](/Challenge4/images/challenge4_vscode13.png)
+
+        !['Challenge 2 Notebook'](/Challenge4/images/challenge4_vscode14.png)
+
+        !['Challenge 2 Notebook'](/Challenge4/images/challenge4_vscode15.png)
+
+
     - Update the [evaluation code](https://github.com/microsoft/MLOpsPython/blob/master/docs/custom_model.md#update-evaluation-code), where you replace all instances of `mse` to `auc` and **disable the evaluation step** out of interest of time. **Don't do Customize build agent environment section**
 
     - Once completed the **Update Evaluation Code** , create an Azure DevOps Pipeline and run a new build pipeline based on your `driver_training-ci.yml` pipeline definition in your forked repository. More details on what to do [here](https://github.com/microsoft/MLOpsPython/blob/master/docs/getting_started.md#set-up-the-model-ci-training-evaluation-and-registration-pipeline)
@@ -132,6 +157,9 @@ Your team will take the learnings and relevant Python scripts from the previous 
 - Next, [set up the Release Deployment pipeline](https://github.com/microsoft/MLOpsPython/blob/master/docs/getting_started.md#set-up-the-release-deployment-pipeline)
 
     - Ignore the Batch Scoring pipeline - we won't be doing this today.
+    - If you encounter an error which prevents deployment, have a look at the Deployment logs for your Endpoint in your IaC provisioned Azure ML Workspace:
+
+    !['Challenge 2 Notebook'](/Challenge4/images/challenge4_vscode16.png)
 
 - Once the CD pipeline completes, you've finished Workshop 3. Congratulations!
 
