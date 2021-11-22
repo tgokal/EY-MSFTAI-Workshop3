@@ -77,16 +77,15 @@ As a team, complete the following tasks:
 
 1. To use Notebooks, navigate to the Compute Tab and click on the **New** button.
 
-
     !['Welcome to Studio'](/Challenge1/images/challenge1_1d1.png)    
 
-    Create a `Standard_DS3_v2` Compute Instance and name the instance `EYTeam{insert team number here}devbox`. The virtual machine type should be `CPU` and based in the location `australiaeast`.
+    Create a `Standard_DS3_v2` Compute Instance and name the instance `EYTeam{insert team number here}devbox`. The virtual machine type should be `CPU` and based in the location `australiaeast`. Further reading on what a [Compute Instance is in Azure Machine Learning](https://docs.microsoft.com/en-us/azure/machine-learning/how-to-save-write-experiment-files).
 
     !['Create a Compute Instance'](/Challenge1/images/challenge1_1e.PNG)
     
     Click on the Next: Advanced Settings button to explore how you'd set up a virtual network in a prod environment, assign a compute to another user, etc. 
     
-    Don't change any of these settings - this is just for you to learn and expose yourself to the Advanced Settings. 
+    **Don't change any of these settings - this is just for you to learn and expose yourself to the Advanced Settings.**
 
     !['Create a Compute Instance'](/Challenge1/images/challenge1_1e2.png)
     
