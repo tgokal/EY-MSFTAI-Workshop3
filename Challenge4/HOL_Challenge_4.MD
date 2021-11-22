@@ -113,6 +113,8 @@ Your team will take the learnings and relevant Python scripts from the previous 
 
     - In your IaC provisioned Azure Machine Learning workspace, create a dataset in Azure Machine Learning using the same training data that you used from Microsoft Team and follow this section [here](https://github.com/microsoft/MLOpsPython/blob/master/docs/custom_model.md#configure-training-data).
 
+    - If you have to make changes to a file within the `.pipelines/` folder, edit it from GitHub
+
     - Next, we need to update the scripts listed in the [Replace training code](https://github.com/microsoft/MLOpsPython/blob/master/docs/custom_model.md#replace-training-code) of the guide.
 
     - Update the [evaluation code](https://github.com/microsoft/MLOpsPython/blob/master/docs/custom_model.md#update-evaluation-code), where you replace all instances of `mse` to `auc` and **disable the evaluation step** out of interest of time.
