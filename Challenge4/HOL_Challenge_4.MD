@@ -17,6 +17,10 @@ Your team will take the learnings and relevant Python scripts from the previous 
 
     - [Set up Azure DevOps](https://github.com/microsoft/MLOpsPython/blob/master/docs/getting_started.md#setting-up-azure-devops) to create an Azure DevOps organization.
 
+        -  You'll use Azure DevOps for running the multi-stage pipeline with build, model training, and scoring service release stages. 
+         If you don't already have an Azure DevOps organization, create one by following the instructions at [Quickstart: Create an organization or project collection](https://docs.microsoft.com/en-us/azure/devops/organizations/accounts/create-organization?view=azure-devops). 
+        - If you already have an Azure DevOps organization, create a new project using the guide at [Create a project in Azure DevOps and TFS](https://docs.microsoft.com/en-us/azure/devops/organizations/projects/create-project?view=azure-devops&tabs=preview-page). 
+
     - Give your DevOps Organization a name and host the project in Australia East. Enter in the password characters and click **Continue**
     
          !['Challenge 2 Notebook'](/Challenge4/images/challenge4_g.png)
@@ -25,7 +29,7 @@ Your team will take the learnings and relevant Python scripts from the previous 
 
         !['Challenge 2 Notebook'](/Challenge4/images/challenge4_h.png)
 
-    - Install the [Azure Machine Learning extension by clicking on the link here](https://github.com/microsoft/MLOpsPython/blob/master/docs/getting_started.md#install-the-azure-machine-learning-extension). You'll arrive to the page like the screenshot below and click on the **Get it free** button.
+    - Install the [Azure Machine Learning extension by clicking on the link here](https://marketplace.visualstudio.com/items?itemName=ms-air-aiagility.vss-services-azureml). Install the Azure Machine Learning extension to your Azure DevOps organization from the Visual Studio Marketplace. This extension contains the Azure ML pipeline tasks and adds the ability to create Azure ML Workspace service connections. You'll arrive to the page like the screenshot below and click on the **Get it free** button.
 
         !['Challenge 2 Notebook'](/Challenge4/images/challenge4_i.png)
 
@@ -84,7 +88,7 @@ Your team will take the learnings and relevant Python scripts from the previous 
 
     !['Challenge 2 Notebook'](/Challenge4/images/challenge4_t.png)
 
-- Next, we need to provision resources using Azure Pipelines with IaC (infrastructure as code) using this [link](https://github.com/microsoft/MLOpsPython/blob/master/docs/getting_started.md#provisioning-resources-using-azure-pipelines)
+- Next, we need to provision resources using Azure Pipelines with IaC (infrastructure as code) using this [link](https://github.com/microsoft/MLOpsPython/blob/master/docs/getting_started.md#provisioning-resources-using-azure-pipelines).
 
     - First create an Azure Resource Service Connection following the above link
 
