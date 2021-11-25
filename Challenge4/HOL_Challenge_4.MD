@@ -121,7 +121,7 @@ Your team will take the learnings and relevant Python scripts from the previous 
 
         !['Challenge 2 Notebook'](/Challenge4/images/challenge4_aa.png)
 
-    - In your IaC provisioned Azure Machine Learning workspace, create a dataset in Azure Machine Learning using the same training data that you used from Microsoft Team and follow this section [here](https://github.com/microsoft/MLOpsPython/blob/master/docs/custom_model.md#configure-training-data).
+    - In your IaC provisioned Azure Machine Learning workspace, create a Tabular Dataset in Azure Machine Learning using the same training data that you used from Microsoft Team and follow this section [here](https://github.com/microsoft/MLOpsPython/blob/master/docs/custom_model.md#configure-training-data). If you code doesn't work, register it from the Azure ML UI.
 
     - Next, we need to update the scripts listed in the [Replace training code](https://github.com/microsoft/MLOpsPython/blob/master/docs/custom_model.md#replace-training-code) of the guide. Ensure that you're committing the changes to GitHub as you change each file `git status`, `git add <file>`, `git commit -m <message>` and `git push origin master`, or using the Source Control feature in VSCode like:
 
