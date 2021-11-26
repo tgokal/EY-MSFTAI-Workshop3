@@ -156,7 +156,7 @@ Your team will take the learnings and relevant Python scripts from the previous 
 
     - You will need to install `lightgbm` as an inline Python script within the `.pipelines/code-quality-template.yml` file.
 
-- Once your build pipeline completes, you'll need to [replace the scoring code](https://github.com/microsoft/MLOpsPython/blob/master/docs/custom_model.md#replace-score-code). Ensure that you replace the `test_row` in the `__main__()` function within `score.py`. This will run the data shaped for our features to the model when scoring occurs on the Azure Container Instance.
+- Once your build pipeline completes, you'll need to [replace the scoring code](https://github.com/microsoft/MLOpsPython/blob/master/docs/custom_model.md#replace-score-code). Ensure that you replace the `test_row` in the `__main__()` function within `score.py` and the `input_data` in `smoke_test_scoring.py` with the our input data from the end of Challenge 3. This will run the data shaped for our features to the model when scoring occurs on the Azure Container Instance. 
 
 - Next, [set up the Release Deployment pipeline](https://github.com/microsoft/MLOpsPython/blob/master/docs/getting_started.md#set-up-the-release-deployment-pipeline)
 
