@@ -90,6 +90,10 @@ Your team will take the learnings and relevant Python scripts from the previous 
 
 - Next, we need to provision resources using Azure Pipelines with IaC (infrastructure as code) using this [link](https://github.com/microsoft/MLOpsPython/blob/master/docs/getting_started.md#provisioning-resources-using-azure-pipelines).
 
+    - Navigate to `environment_setup/arm-templates/cloud-environment.json` file in your forked MLOps Python repo. Add `"australiaeast"` as another entry in the `"allowed_values"` list. This gives us the choice to provide infrastructure in a region closer to home, saving costs. 
+
+        !['Challenge 2 Notebook'](/Challenge4/images/challenge4_iac_change.png)
+
     - First create an Azure Resource Service Connection following the above link
 
         !['Challenge 2 Notebook'](/Challenge4/images/challenge4_u.png)
