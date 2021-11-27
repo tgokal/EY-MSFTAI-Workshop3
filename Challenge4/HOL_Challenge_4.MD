@@ -13,13 +13,13 @@ Your team will take the learnings and relevant Python scripts from the previous 
 
 ## Steps
 
-- As a team carefully follow the [Getting Started guide](https://github.com/microsoft/MLOpsPython/blob/master/docs/getting_started.md):
+- As a team carefully refer to the [Getting Started guide](https://github.com/microsoft/MLOpsPython/blob/master/docs/getting_started.md).
 
-    - [Set up Azure DevOps](https://github.com/microsoft/MLOpsPython/blob/master/docs/getting_started.md#setting-up-azure-devops) to create an Azure DevOps organization.
+- Firstly, set up Azure DevOps to create an Azure DevOps organization.
 
-        -  You'll use Azure DevOps for running the multi-stage pipeline with build, model training, and scoring service release stages. 
-         If you don't already have an Azure DevOps organization, create one by following the instructions at [Quickstart: Create an organization or project collection](https://docs.microsoft.com/en-us/azure/devops/organizations/accounts/create-organization?view=azure-devops). 
-        - If you already have an Azure DevOps organization, create a new project using the guide at [Create a project in Azure DevOps and TFS](https://docs.microsoft.com/en-us/azure/devops/organizations/projects/create-project?view=azure-devops&tabs=preview-page). 
+    -  You'll use Azure DevOps for running the multi-stage pipeline with build, model training, and scoring service release stages. 
+    - If you don't already have an Azure DevOps organization, create one by following the instructions at [Quickstart: Create an organization or project collection](https://docs.microsoft.com/en-us/azure/devops/organizations/accounts/create-organization?view=azure-devops). 
+    - If you already have an Azure DevOps organization, create a new project using the guide at [Create a project in Azure DevOps and TFS](https://docs.microsoft.com/en-us/azure/devops/organizations/projects/create-project?view=azure-devops&tabs=preview-page). 
 
     - Give your DevOps Organization a name and host the project in Australia East. Enter in the password characters and click **Continue**
     
@@ -29,7 +29,9 @@ Your team will take the learnings and relevant Python scripts from the previous 
 
         !['Challenge 2 Notebook'](/Challenge4/images/challenge4_h.png)
 
-    - Install the [Azure Machine Learning extension by clicking on the link here](https://marketplace.visualstudio.com/items?itemName=ms-air-aiagility.vss-services-azureml). Install the Azure Machine Learning extension to your Azure DevOps organization from the Visual Studio Marketplace. This extension contains the Azure ML pipeline tasks and adds the ability to create Azure ML Workspace service connections. You'll arrive to the page like the screenshot below and click on the **Get it free** button.
+    - Install the [Azure Machine Learning extension by clicking on the link here](https://marketplace.visualstudio.com/items?itemName=ms-air-aiagility.vss-services-azureml). Install the Azure Machine Learning extension to your Azure DevOps organization from the Visual Studio Marketplace. This extension contains the Azure ML pipeline tasks and adds the ability to create Azure ML Workspace service connections. 
+    
+    - You'll arrive to the page like the screenshot below and click on the **Get it free** button.
 
         !['Challenge 2 Notebook'](/Challenge4/images/challenge4_i.png)
 
@@ -41,7 +43,9 @@ Your team will take the learnings and relevant Python scripts from the previous 
 
         !['Challenge 2 Notebook'](/Challenge4/images/challenge4_k.png)
 
-        Click on **Proceed to Organization** to come back to the Azure DevOps organization. Select your Project to be taken to the Project Overview page.
+        Click on **Proceed to Organization** to come back to the Azure DevOps organization. 
+        
+        Select your Project to be taken to the Project Overview page.
 
         !['Challenge 2 Notebook'](/Challenge4/images/challenge4_l.png)
 
@@ -68,6 +72,8 @@ Your team will take the learnings and relevant Python scripts from the previous 
 
     !['Challenge 2 Notebook'](/Challenge4/images/challenge4_vscode4.png)
 
+    You may be prompted to sign into your Azure subscription. Enter your details. 
+    
     Select **Open again**, this will open up VSCode, like below:
 
     !['Challenge 2 Notebook'](/Challenge4/images/challenge4_vscode5.png)
@@ -76,17 +82,40 @@ Your team will take the learnings and relevant Python scripts from the previous 
 
     !['Challenge 2 Notebook'](/Challenge4/images/challenge4_vscode6.png)
 
-    In the Terminal, clone your MLOps template using `git clone <url of your forked template>` in a different folder compared to your `EY-MSFTAI-Workshop3` repo.
+    In the Terminal, clone your MLOps template using `git clone <url of your forked template>` in a **different folder compared to your `EY-MSFTAI-Workshop3` repo.** 
+    
+    Please ensure this clone is in a different folder - it will save you an immense amount of confusion because we're delineating steps by keeping the directory folders separate.
 
     !['Challenge 2 Notebook'](/Challenge4/images/challenge4_vscode1.png)
 
     !['Challenge 2 Notebook'](/Challenge4/images/challenge4_vscode2.png)
 
-- Coming back to Azure DevOps, we now need to [create a variable group for the Pipeline](https://github.com/microsoft/MLOpsPython/blob/master/docs/getting_started.md#create-a-variable-group-for-your-pipeline). 
+- Coming back to Azure DevOps, we now need to create a **variable group** for the Pipeline. MLOpsPython requires some variables to be set before you can run any pipelines. You'll need to create a variable group in Azure DevOps to store values that are reused across multiple pipelines or pipeline stages. Either store the values directly in  Azure DevOps or connect to an Azure Key Vault in your subscription. Check out the Add & use variable groups documentation to learn more about how to create a variable group and link it to your pipeline.
+
+    Navigate to the **Library under the Pipelines tab** - you will see the following: 
 
     !['Challenge 2 Notebook'](/Challenge4/images/challenge4_s.png)
 
+    Create the following variable group called `devopsforai-aml-vg`. The YAML pipeline definitions in this repo refer to this variable group by this specific name. The variable group should contain the following required variables. Azure resources that don't exist yet will be created in the Provisioning resources using Azure Pipelines step below.
+
     !['Challenge 2 Notebook'](/Challenge4/images/challenge4_t.png)
+
+    - Use `australiaeast` for `LOCATION`. We will need to add `australiaeast` as a valid `LOCATION` allowed value in the next step.
+    - Change the name of your `BASE_NAME` variable to be `eyteam{your team number}`
+
+    Some further information about these variables:
+
+    - `BASE_NAME` is used as a prefix for naming Azure resources and should be unique. When sharing an Azure subscription, the prefix allows you to avoid naming collisions for resources that require unique names, for example, Azure Blob Storage and Registry DNS. Make sure to set `BASE_NAME` to a unique name so that created resources will have unique names, for example, MyUniqueMLamlcr, MyUniqueML-AML-KV, and so on. The length of the `BASE_NAME` value shouldn't exceed 10 characters and must contain letters and numbers only.
+    - `LOCATION` is the name of the Azure location for your resources. There should be no spaces in the name. For example, `australiaeast`, `central`, `westus`, `westus2`.
+    - `RESOURCE_GROUP` is used as the name for the resource group that will hold the Azure resources for the solution. If providing an existing Azure ML Workspace, set this value to the corresponding resource group name.
+    
+    - `WORKSPACE_NAME` is used for creating the Azure Machine Learning Workspace. You can provide an existing Azure ML Workspace here if you've got one.
+    
+    - `AZURE_RM_SVC_CONNECTION` is used by the Azure Pipeline in Azure DevOps that creates the Azure ML workspace and associated resources through Azure Resource Manager. You'll create the connection in a step below.
+    
+    - `WORKSPACE_SVC_CONNECTION` is used to reference a service connection for the Azure ML workspace. You'll create the connection after provisioning the workspace in the Create an Azure DevOps Service Connection for the Azure ML Workspace section below.
+    
+    - `ACI_DEPLOYMENT_NAME` is used for naming the scoring service during deployment to Azure Container Instances.
 
 - Next, we need to provision resources using Azure Pipelines with IaC (infrastructure as code) using this [link](https://github.com/microsoft/MLOpsPython/blob/master/docs/getting_started.md#provisioning-resources-using-azure-pipelines).
 
