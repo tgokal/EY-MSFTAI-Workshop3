@@ -119,6 +119,9 @@ Your team will take the learnings and relevant Python scripts from the previous 
 
 - Next, we need to provision resources using Azure Pipelines with IaC (infrastructure as code) using this [link](https://github.com/microsoft/MLOpsPython/blob/master/docs/getting_started.md#provisioning-resources-using-azure-pipelines).
 
+    - The easiest way to create all required Azure resources (Resource Group, Azure ML Workspace, Container Registry, and others) is to use the Infrastructure as Code (IaC) pipeline with ARM templates or the pipeline with Terraform templates. The pipeline takes care of setting up all required resources based on these Azure Resource Manager templates, or based on these Terraform templates.
+
+    - Note: Since Azure Blob storage account required for batch scoring is optional, the resource provisioning pipelines mentioned above do not create this resource automatically, and manual creation is required before use.
     - Navigate to `environment_setup/arm-templates/cloud-environment.json` file in your forked MLOps Python repo. Add `"australiaeast"` as another entry in the `"allowed_values"` list. This gives us the choice to provide infrastructure in a region closer to home, saving costs. 
 
         !['Challenge 2 Notebook'](/Challenge4/images/challenge4_iac_change.png)
@@ -128,35 +131,72 @@ Your team will take the learnings and relevant Python scripts from the previous 
         !['Challenge 2 Notebook'](/Challenge4/images/challenge4_u.png)
         !['Challenge 2 Notebook'](/Challenge4/images/challenge4_v.png)
 
-    - Once this is completed, you can create your Infrastructure as Code pipeline:
+        Leave the `Resource Group` field empty.
 
-        !['Challenge 2 Notebook'](/Challenge4/images/challenge4_w.png)
-        !['Challenge 2 Notebook'](/Challenge4/images/challenge4_x.png)
-        !['Challenge 2 Notebook'](/Challenge4/images/challenge4_y.png)
-        !['Challenge 2 Notebook'](/Challenge4/images/challenge4_z.png)
-        !['Challenge 2 Notebook'](/Challenge4/images/challenge4_za.png)
+        Note: Creating the Azure Resource Manager service connection scope requires 'Owner' or 'User Access Administrator' permissions on the subscription. You'll also need sufficient permissions to register an application with your Azure AD tenant, or you can get the ID and secret of a service principal from your Azure AD Administrator. That principal must have 'Contributor' permissions on the subscription.
 
-        Once completed, you should see: 
+        !['Challenge 2 Notebook'](/Challenge4/images/create-rm-service-connection.png)
 
-        !['Challenge 2 Notebook'](/Challenge4/images/challenge4_zb.png)
+- Once this is completed, you can create your Infrastructure as Code pipeline from your forked repository.
 
-        Switching over to Azure, you'll see fully provisioned resources:
-        !['Challenge 2 Notebook'](/Challenge4/images/challenge4_zc.png)
+    !['Challenge 2 Notebook'](/Challenge4/images/build-connect.png)
+
+    Select the Existing Azure Pipelines YAML file option and set the path to `/environment_setup/iac-create-environment-pipeline-arm.yml` or to `/environment_setup/iac-create-environment-pipeline-tf.yml`, depending on if you want to deploy your infrastructure using ARM templates or Terraform:
+
+    !['Challenge 2 Notebook'](/Challenge4/images/challenge4_w.png)
+
+    Click **Run**
+
+    !['Challenge 2 Notebook'](/Challenge4/images/challenge4_x.png)
+    !['Challenge 2 Notebook'](/Challenge4/images/challenge4_y.png)
+    !['Challenge 2 Notebook'](/Challenge4/images/challenge4_z.png)
+    !['Challenge 2 Notebook'](/Challenge4/images/challenge4_za.png)
+
+    Once completed, you should see: 
+
+    !['Challenge 2 Notebook'](/Challenge4/images/challenge4_zb.png)
+
+    Switching over to Azure, you'll see fully provisioned resources:
+    !['Challenge 2 Notebook'](/Challenge4/images/challenge4_zc.png)
     
 
-- From the previous step, you would have created an Azure ML workspace. Now, we need to create a workspace service connection using this [link](https://github.com/microsoft/MLOpsPython/blob/master/docs/getting_started.md#create-an-azure-devops-service-connection-for-the-azure-ml-workspace).
+- From the previous step, you would have created an Azure ML workspace. Now, we need to create a workspace service connection. Similar to the Azure Resource Manager service connection, you need to create an additional one for the Azure ML Workspace.
 
-- Switch over to the [Custom Model](https://github.com/microsoft/MLOpsPython/blob/master/docs/custom_model.md) guide:
+   -  Create a new service connection to your Azure ML Workspace using the Machine Learning Extension instructions to enable executing the Azure ML training pipeline. The connection name needs to match `WORKSPACE_SVC_CONNECTION` that you set in the variable group above (eg. 'aml-workspace-connection').
 
-    - Firstly, we need to [bootstrap the directory structure of your cloned template repo files](https://github.com/microsoft/MLOpsPython/blob/master/docs/custom_model.md#bootstrap-the-project).
+        !['Challenge 2 Notebook'](/Challenge4/images/ml-ws-svc-connection.png)
 
-        - Ensure that you name the project `driver_training`. 
+   - Note: Similar to the Azure Resource Manager service connection you created earlier, creating a service connection with Azure Machine Learning workspace scope requires 'Owner' or 'User Access Administrator' permissions on the Workspace. You'll need sufficient permissions to register an application with your Azure AD tenant, or you can get the ID and secret of a service principal from your Azure AD Administrator. That principal must have Contributor permissions on the Azure ML Workspace.
+
+- Switch over to the [Custom Model](https://github.com/microsoft/MLOpsPython/blob/master/docs/custom_model.md) guide.
+
+    - Firstly, we need to bootstrap the directory structure of your cloned template repo files.
+
+        - Bootstrapping will prepare the directory structure to be used for your project name which includes:
+            - Renaming files and folders from the base project name diabetes_regression to your project name 
+            - Fixing imports and absolute path based on your project name
+            - Deleting and cleaning up some directories
+        - Note: Since the bootstrap script will rename the diabetes_regression folder to the project name of your choice, we'll refer to your project as [project name] when paths are involved.
+
+    - To bootstrap from the existing MLOpsPython repository:
+        - Ensure Python 3 is installed locally
+        - From a local copy of the code, run the bootstrap.py script in the bootstrap folder `python bootstrap.py -d dirpath -n projectname`
+            - `dirpath` is the absolute path to the root of the directory where MLOpsPython is cloned
+            - `projectname` is the name of your ML project. Ensure that you name the project `driver_training`. 
 
         !['Challenge 2 Notebook'](/Challenge4/images/challenge4_aa.png)
 
-    - In your IaC provisioned Azure Machine Learning workspace, create a Tabular Dataset in Azure Machine Learning using the same training data that you used from Microsoft Team and follow this section [here](https://github.com/microsoft/MLOpsPython/blob/master/docs/custom_model.md#configure-training-data). If you code doesn't work, register it from the Azure ML UI.
+- In your IaC provisioned Azure Machine Learning workspace, create a Tabular Dataset in Azure Machine Learning using the same training data that you used from Microsoft Team and follow this section [here](https://github.com/microsoft/MLOpsPython/blob/master/docs/custom_model.md#configure-training-data). If you code doesn't work, register it from the Azure ML UI.
 
-    - Next, we need to update the scripts listed in the [Replace training code](https://github.com/microsoft/MLOpsPython/blob/master/docs/custom_model.md#replace-training-code) of the guide. 
+    - Convert the template to use your own Azure ML Dataset for model training via these steps:
+        - Create a Dataset in your Azure ML workspace
+        - Update the `DATASET_NAME` and `DATASTORE_NAME` variables in `.pipelines/driver_training-variables-template.yml`
+
+- Next, we need to update the scripts listed in the below. The template contains three scripts in the `driver_training/training` folder. Update these scripts for your experiment code:
+    - `train.py` contains the platform-agnostic logic required to do basic data preparation and train the model. This script can be invoked against a static data file for local development.
+    - `train_aml.py` is the entry script for the ML pipeline step. It invokes the functions in `train.py` in an Azure ML context and adds logging. `train_aml.py` loads parameters for training from `driver_training/parameters.json` and passes them to the training function in `train.py`. If your experiment code can be refactored to match the function signatures in `train.py`, this file shouldn't need many changes.
+    - `test_train.py` contains tests that guard against functional regressions in `train.py`. Remove this file if you have no tests for your own code.
+    - Add any dependencies required by training to `driver_training/conda_dependencies.yml`. This file will be used to generate the environment that the pipeline steps will run in.
 
     - Replace the contents of `driver_training/parameters.json` with the `parameters.json` file that we created in Challenge 2 like so:
 
@@ -183,17 +223,78 @@ Your team will take the learnings and relevant Python scripts from the previous 
         !['Challenge 2 Notebook'](/Challenge4/images/challenge4_vscode15.png)
 
 
-    - Update the [evaluation code](https://github.com/microsoft/MLOpsPython/blob/master/docs/custom_model.md#update-evaluation-code), where you replace all instances of `mse` to `auc` and **disable the evaluation step** out of interest of time. **Don't do Customize build agent environment section**
+- Update the evaluation code, where you replace all instances of `mse` to `auc` and **disable the evaluation step** out of interest of time. **Don't do Customize build agent environment section**
 
-    - Once completed the **Update Evaluation Code** , create an Azure DevOps Pipeline and run a new build pipeline based on your `driver_training-ci.yml` pipeline definition in your forked repository. More details on what to do [here](https://github.com/microsoft/MLOpsPython/blob/master/docs/getting_started.md#set-up-the-model-ci-training-evaluation-and-registration-pipeline)
+    - The MLOpsPython template uses the `evaluate_model` script to compare the performance of the newly trained model and the current production model based on Mean Squared Error. If the performance of the newly trained model is better than the current production model, then the pipelines continue. Otherwise, the pipelines are canceled.
+    - To keep the evaluation step, replace all instances of mse in `driver_training/evaluate/evaluate_model.py` with the metric that you want.
+    - To disable the evaluation step, either:
+        - Set the DevOps pipeline variable `RUN_EVALUATION` to `false`
+        - Uncomment `RUN_EVALUATION` in `.pipelines/driver_training-variables-template.yml` and set the value to `false`.
+- Once completed the **Update Evaluation Code** , create an Azure DevOps Pipeline and run a new build pipeline based on your `driver_training-ci.yml` pipeline definition in your forked repository. 
 
-    - Rename this pipeline to `Model-Train-Register-CI`.
+    - Now that you've provisioned all the required Azure resources and service connections, you can set up the pipelines for training (CI) and deploying (CD) your machine learning model to production. Additionally, you can set up a pipeline for batch scoring.
 
-- Your first run of the build pipeline should **fail**. You will see many linting errors discovered. Attempt to resolve them in your scripts by looking at X for further details.
+    - Model CI, training, evaluation, and registration - triggered on code changes to master branch on GitHub. 
+        - Runs linting, unit tests, code coverage
+        - Publishes and runs the training pipeline. 
+        - If a new model is registered after evaluation, it creates a build artifact containing the JSON metadata of the model. 
+        - Definition: `driver_training-ci.yml`.
+    - Release deployment - consumes the artifact of the previous pipeline and deploys a model to either Azure Container Instances (ACI), Azure Kubernetes Service (AKS), or Azure App Service environments. 
+        - Definition: `driver_training-cd.yml`.
+        - Note: Edit the pipeline definition to remove unused stages. For example, if you're deploying to Azure Container Instances and Azure Kubernetes Service only, delete the unused Deploy_Webapp stage.
+
+    - These pipelines use a Docker container on the Azure Pipelines agents to accomplish the pipeline steps. The container image `mcr.microsoft.com/mlops/python:latest` is built with this Dockerfile and has all the necessary dependencies installed for MLOpsPython template. 
+    - This image is an example of a custom Docker image with a pre-baked environment. The environment is guaranteed to be the same on any building agent, VM, or local machine. 
+    - In your project, you'll want to build your own Docker image that only contains the dependencies and tools required for your use case. Your image will probably be smaller and faster, and it will be maintained by your team.
+
+- In your Azure DevOps project, create and run a new build pipeline based on the `driver_training-ci.yml` pipeline definition in your forked repository. If you plan to use the release deployment pipeline (in the next section), you will need to rename this pipeline to `Model-Train-Register-CI`.
+
+- Your first run of the build pipeline should **fail**. You will see many linting errors discovered. Attempt to resolve them in your scripts by looking at the **Tests tab for your Pipeline run** for further details.
 
     - If you are short on time, comment out the linting test section in the `.pipelines/code-quality-template.yml` file.
 
     - You will need to install `lightgbm` using `pip` as an inline Python script within the `.pipelines/code-quality-template.yml` file.
+
+    - A successful unit test and code coverage will look like:
+
+        !['Challenge 2 Notebook'](/Challenge4/images/unit-tests.png)
+
+        !['Challenge 2 Notebook'](/Challenge4/images/code-coverage-report.png)
+
+- Once the pipeline is finished, check the execution result:
+
+    !['Challenge 2 Notebook'](/Challenge4/images/model-train-register.png)
+
+    !['Challenge 2 Notebook'](/Challenge4/images/model-train-register-artifacts.png)
+
+- Also check the published training pipeline in the `mlops-AML-WS` workspace in Azure Machine Learning Studio:
+
+    !['Challenge 2 Notebook'](/Challenge4/images/training-pipeline.png)
+
+- Great, you now have the build pipeline for training set up which automatically triggers every time there's a change in the master branch!
+
+- After the pipeline is finished, you'll see a new model in the ML Workspace:
+
+    !['Challenge 2 Notebook'](/Challenge4/images/trained-model.png)
+
+    - To disable the automatic trigger of the training pipeline, change the auto-trigger-training variable as listed in the `.pipelines\diabetes_regression-ci.yml` pipeline to false. You can also override the variable at runtime execution of the pipeline.
+
+- The pipeline stages are summarized below:
+    - Model CI
+        - Linting (code quality analysis)
+        - Unit tests and code coverage analysis
+        - Build and publish ML Training Pipeline in an ML Workspace
+    - Train model
+        - Determine the ID of the ML Training Pipeline published in the previous stage.
+        - Trigger the ML Training Pipeline and waits for it to complete.
+            - This is an agentless job. The CI pipeline can wait for ML pipeline completion for hours or even days without using agent resources.
+        - Determine if a new model was registered by the ML Training Pipeline.
+            - If the model evaluation determines that the new model doesn't perform any better than the previous one, the new model won't register and the ML Training Pipeline will be canceled. In this case, you'll see a message in the 'Train Model' job under the 'Determine if evaluation succeeded and new model is registered' step saying 'Model was not registered for this run.'
+            - See evaluate_model.py for the evaluation logic.
+            - Additional Variables and Configuration for configuring this and other behavior.
+    - Create pipeline artifact
+        - Get the info about the registered model
+        - Create a pipeline artifact called model that contains a model.json file containing the model information.
 
 - Once your build pipeline completes, you'll need to [replace the scoring code](https://github.com/microsoft/MLOpsPython/blob/master/docs/custom_model.md#replace-score-code). Ensure that you replace the `test_row` in the `__main__()` function within `score.py` and the `input_data` in `smoke_test_scoring.py` with the our input data from the end of Challenge 3. This will run the data shaped for our features to the model when scoring occurs on the Azure Container Instance. 
 
