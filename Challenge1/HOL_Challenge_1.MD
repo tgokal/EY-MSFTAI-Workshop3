@@ -189,4 +189,4 @@ To have completed this Challenge, you should have:
 - Discuss Coaching Questions with your Coach and Team.
 
 # On to Challenge 2
-Click [here](https://github.com/tgokal/EY-MSFTAI-Workshop3/blob/master/Challenge23/HOL_Challenge_2.MD) to continue the Workshop.
+Click [here](https://github.com/tgokal/EY-MSFTAI-Workshop3/blob/master/Challenge23/HOL_Challenge_2.MD) to begin Challenge 2, where we will create Python Scripts for our model.
