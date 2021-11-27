@@ -155,4 +155,5 @@ To have completed this Challenge, you should have:
 
 - Discussed Coaching Questions with your Coach and Team.
 
-Navigate to the [Challenge 3](https://github.com/tgokal/EY-MSFTAI-Workshop3/blob/master/Challenge23/HOL_Challenge_3.MD) guide to deploy the trained model to an Azure Container Instance. Keep your Notebook open as you'll see the Challenge 3 exercises below.
+# On to Challenge 3
+Click [here](https://github.com/tgokal/EY-MSFTAI-Workshop3/blob/master/Challenge23/HOL_Challenge_3.MD) to see the HOL guide for Challenge 3. In Challenge 3, we will deploy the trained model to an Azure Container Instance. Keep your current Challenge 2 Notebook open as you'll see the Challenge 3 exercises below.
