@@ -356,7 +356,7 @@ Your team will take the learnings and relevant Python scripts from the previous 
 
 !['Challenge 2 Notebook'](/Challenge4/images/challenge4_vscode16.png)
 
-# End of Workshop 3
+# End of Workshop 4
 - Once the CD pipeline completes, you've finished Workshop 3. Congratulations!
 
 - If you're keen to explore more, investigate what you'd need to change to [deploy to AKS or Azure App Service](https://github.com/microsoft/MLOpsPython/blob/master/docs/getting_started.md#further-exploration).
