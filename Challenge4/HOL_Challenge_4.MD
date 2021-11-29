@@ -142,6 +142,12 @@ Your team will take the learnings and relevant Python scripts from the previous 
 
     !['Challenge 2 Notebook'](/Challenge4/images/build-connect.png)
 
+    Select your MLOps Python repo template.
+
+    !['Challenge 2 Notebook'](/Challenge4/images/select-a-repo.png)
+
+    !['Challenge 2 Notebook'](/Challenge4/images/existing-azure-pipelines-yaml.png)
+
     Select the Existing Azure Pipelines YAML file option and set the path to `/environment_setup/iac-create-environment-pipeline-arm.yml` or to `/environment_setup/iac-create-environment-pipeline-tf.yml`, depending on if you want to deploy your infrastructure using ARM templates or Terraform:
 
     !['Challenge 2 Notebook'](/Challenge4/images/challenge4_w.png)
